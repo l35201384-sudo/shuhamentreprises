@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shubham Enterprises - View our successful web development, mobile app development, and SaaS projects across various industries.">
+    <meta name="keywords" content="portfolio, web development projects, mobile app projects, SaaS projects, case studies, client work">
+    <meta name="author" content="Shubham Enterprises">
+    <title>Our Portfolio - Web, App & SaaS Projects | Shubham Enterprises</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">SE</div>
+                    <span class="logo-text">Shubham Enterprises</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Portfolio</h1>
+                <p class="hero-subtitle">Explore our successful projects and see how we've helped businesses transform their digital presence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="section" style="padding: var(--spacing-xl) 0; background: var(--light-gray);">
+        <div class="container">
+            <div class="text-center">
+                <h2>Filter Projects</h2>
+                <div class="portfolio-filters" style="margin-top: var(--spacing-lg);">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="app">Mobile Apps</button>
+                    <button class="filter-btn" data-filter="saas">SaaS Platforms</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card" data-category="web ecommerce">
+                    <div class="portfolio-image">E-Commerce Platform</div>
+                    <div class="portfolio-content">
+                        <h3>TechMart Online Store</h3>
+                        <p>Complete e-commerce solution with advanced product catalog, shopping cart, payment integration, and admin dashboard.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>150%</strong> increase in online sales
+                            </div>
+                            <div class="result-item">
+                                <strong>40%</strong> faster page load times
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('techmart')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card" data-category="app healthcare">
+                    <div class="portfolio-image">Healthcare App</div>
+                    <div class="portfolio-content">
+                        <h3>MediCare Mobile App</h3>
+                        <p>Cross-platform healthcare app for appointment booking, prescription management, and telemedicine consultations.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">HIPAA</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>25,000+</strong> active users
+                            </div>
+                            <div class="result-item">
+                                <strong>95%</strong> user satisfaction
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('medicare')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card" data-category="saas education">
+                    <div class="portfolio-image">Learning Management</div>
+                    <div class="portfolio-content">
+                        <h3>EduLearn SaaS Platform</h3>
+                        <p>Comprehensive learning management system with course creation, student tracking, and analytics dashboard.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>10,000+</strong> students enrolled
+                            </div>
+                            <div class="result-item">
+                                <strong>500+</strong> courses created
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('edulearn')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card" data-category="web ecommerce">
+                    <div class="portfolio-image">Restaurant Website</div>
+                    <div class="portfolio-content">
+                        <h3>Bella Vista Restaurant</h3>
+                        <p>Modern restaurant website with online reservations, menu display, customer reviews, and delivery integration.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Payment Gateway</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>80%</strong> increase in reservations
+                            </div>
+                            <div class="result-item">
+                                <strong>60%</strong> online orders
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('bellavista')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card" data-category="app healthcare">
+                    <div class="portfolio-image">Fitness Tracker</div>
+                    <div class="portfolio-content">
+                        <h3>FitLife Mobile App</h3>
+                        <p>Cross-platform fitness tracking app with workout plans, progress tracking, social features, and nutrition logging.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Push Notifications</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>50,000+</strong> downloads
+                            </div>
+                            <div class="result-item">
+                                <strong>4.8</strong> app store rating
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('fitlife')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card" data-category="saas education">
+                    <div class="portfolio-image">Project Management</div>
+                    <div class="portfolio-content">
+                        <h3>TeamSync SaaS Platform</h3>
+                        <p>Comprehensive project management tool with team collaboration, time tracking, reporting, and resource management.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>1,000+</strong> teams using
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('teamsync')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-card" data-category="web ecommerce">
+                    <div class="portfolio-image">Fashion E-commerce</div>
+                    <div class="portfolio-content">
+                        <h3>StyleHub Fashion Store</h3>
+                        <p>High-end fashion e-commerce platform with virtual try-on, size recommendations, and personalized shopping experience.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Cloudinary</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>200%</strong> conversion rate increase
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('stylehub')">View Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-card" data-category="saas">
+                    <div class="portfolio-image">CRM System</div>
+                    <div class="portfolio-content">
+                        <h3>SalesPro CRM</h3>
+                        <p>Custom CRM system with lead management, sales pipeline, customer communication, and analytics dashboard.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                        </div>
+                        <div class="portfolio-results">
+                            <div class="result-item">
+                                <strong>300%</strong> sales efficiency
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openProjectModal('salespro')">View Case Study</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p class="section-subtitle">Hear from the businesses we've helped transform</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The e-commerce platform Shubham Enterprises built for us has been a game-changer. Our online sales have tripled, and the user experience is exceptional.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>CEO, TechMart Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Our healthcare app has revolutionized patient care. The team's attention to HIPAA compliance and user experience was outstanding.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RJ</div>
+                        <div class="author-info">
+                            <h4>Dr. Robert Johnson</h4>
+                            <p>Medical Director, MediCare Clinic</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The learning management system they developed has helped us scale our online education business to serve thousands of students.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AC</div>
+                        <div class="author-info">
+                            <h4>Amanda Chen</h4>
+                            <p>Founder, EduLearn Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--gradient-primary); color: var(--white);">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: var(--white);">Ready to Start Your Project?</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--spacing-2xl);">Let's discuss how we can help transform your business with custom software solutions.</p>
+                <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-outline btn-lg">Get Started Today</a>
+                    <a href="services.html" class="btn btn-outline btn-lg">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shubham Enterprises</h3>
+                    <p>Transforming businesses through innovative software solutions. We specialize in web development, mobile apps, and SaaS platforms.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#app-development">App Development</a>
+                    <a href="services.html#saas-solutions">SaaS Solutions</a>
+                    <a href="services.html#custom-software">Custom Software</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 shubhameditz41@gmail.com</p>
+                    <p>📞 +91 9685315564</p>
+                    <p>📍 Mumbai, India</p>
+                    <div style="margin-top: var(--spacing-lg);">
+                        <h4>Newsletter Signup</h4>
+                        <form class="newsletter-form" style="display: flex; gap: var(--spacing-sm); margin-top: var(--spacing-sm);">
+                            <input type="email" placeholder="Your email" class="form-control" style="flex: 1; margin-bottom: 0;">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shubham Enterprises. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Project Details</h3>
+                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        // Project data for modals
+        const projectData = {
+            techmart: {
+                title: "TechMart Online Store",
+                category: "E-commerce Platform",
+                description: "A comprehensive e-commerce solution that transformed TechMart's online presence and significantly increased their sales.",
+                challenge: "TechMart needed a modern, scalable e-commerce platform to replace their outdated system and improve customer experience.",
+                solution: "We developed a custom e-commerce platform using React for the frontend, Node.js for the backend, and MongoDB for data storage. The platform includes advanced product catalog, shopping cart, payment integration with Stripe, and a comprehensive admin dashboard.",
+                technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS", "Redis"],
+                results: [
+                    "150% increase in online sales within 6 months",
+                    "40% faster page load times",
+                    "95% reduction in cart abandonment",
+                    "99.9% uptime achieved"
+                ],
+                timeline: "12 weeks",
+                team: "5 developers"
+            },
+            medicare: {
+                title: "MediCare Mobile App",
+                category: "Healthcare Application",
+                description: "A HIPAA-compliant mobile application that revolutionized patient care and appointment management for MediCare Clinic.",
+                challenge: "MediCare needed a secure mobile app for patients to book appointments, manage prescriptions, and access telemedicine services.",
+                solution: "We built a cross-platform mobile app using Flutter with Firebase backend. The app includes secure patient authentication, appointment booking, prescription management, and video consultation features.",
+                technologies: ["Flutter", "Firebase", "REST API", "WebRTC", "HIPAA Compliance"],
+                results: [
+                    "25,000+ active users within 1 year",
+                    "95% user satisfaction rating",
+                    "60% reduction in no-show appointments",
+                    "100% HIPAA compliance maintained"
+                ],
+                timeline: "16 weeks",
+                team: "6 developers"
+            },
+            edulearn: {
+                title: "EduLearn SaaS Platform",
+                category: "Learning Management System",
+                description: "A comprehensive SaaS platform that enabled EduLearn Academy to scale their online education business globally.",
+                challenge: "EduLearn needed a scalable platform to manage courses, students, and instructors while providing analytics and reporting capabilities.",
+                solution: "We developed a multi-tenant SaaS platform using Vue.js frontend and Python backend. The system includes course creation tools, student management, progress tracking, and comprehensive analytics dashboard.",
+                technologies: ["Vue.js", "Python", "PostgreSQL", "AWS", "Redis", "Docker"],
+                results: [
+                    "10,000+ students enrolled",
+                    "500+ courses created",
+                    "99.5% platform uptime",
+                    "200% increase in course completion rates"
+                ],
+                timeline: "20 weeks",
+                team: "8 developers"
+            },
+            bellavista: {
+                title: "Bella Vista Restaurant",
+                category: "Restaurant Website",
+                description: "A modern restaurant website that enhanced Bella Vista's online presence and streamlined their reservation system.",
+                challenge: "Bella Vista needed a modern website with online reservations, menu display, and delivery integration to compete in the digital marketplace.",
+                solution: "We created a responsive website using WordPress with custom PHP development. The site includes online reservation system, dynamic menu display, customer reviews, and delivery integration.",
+                technologies: ["WordPress", "PHP", "MySQL", "Payment Gateway", "Google Maps API"],
+                results: [
+                    "80% increase in online reservations",
+                    "60% of orders now placed online",
+                    "4.8/5 average customer rating",
+                    "50% reduction in phone reservation calls"
+                ],
+                timeline: "8 weeks",
+                team: "3 developers"
+            },
+            fitlife: {
+                title: "FitLife Mobile App",
+                category: "Fitness Application",
+                description: "A comprehensive fitness tracking app that helped users achieve their health goals with personalized workout plans.",
+                challenge: "FitLife needed a mobile app that could track workouts, provide nutrition guidance, and create a community for fitness enthusiasts.",
+                solution: "We developed a cross-platform app using React Native with Firebase backend. The app includes workout tracking, nutrition logging, social features, and personalized recommendations.",
+                technologies: ["React Native", "Firebase", "REST API", "Push Notifications", "AI/ML"],
+                results: [
+                    "50,000+ downloads in first year",
+                    "4.8/5 app store rating",
+                    "70% user retention rate",
+                    "1M+ workouts logged"
+                ],
+                timeline: "14 weeks",
+                team: "5 developers"
+            },
+            teamsync: {
+                title: "TeamSync SaaS Platform",
+                category: "Project Management Tool",
+                description: "A comprehensive project management platform that improved team collaboration and project delivery efficiency.",
+                challenge: "Teams needed a unified platform to manage projects, track time, collaborate, and generate reports for better project outcomes.",
+                solution: "We built a multi-tenant SaaS platform using Angular frontend and Node.js backend. The system includes project management, time tracking, team collaboration tools, and comprehensive reporting.",
+                technologies: ["Angular", "Node.js", "MongoDB", "Docker", "AWS", "WebSocket"],
+                results: [
+                    "1,000+ teams using the platform",
+                    "40% improvement in project delivery time",
+                    "90% user adoption rate",
+                    "99.8% platform reliability"
+                ],
+                timeline: "18 weeks",
+                team: "7 developers"
+            },
+            stylehub: {
+                title: "StyleHub Fashion Store",
+                category: "Fashion E-commerce",
+                description: "A high-end fashion e-commerce platform with AI-powered features that enhanced the shopping experience.",
+                challenge: "StyleHub needed a premium e-commerce platform with advanced features like virtual try-on and personalized recommendations.",
+                solution: "We developed a sophisticated e-commerce platform using Next.js with AI/ML integration. The platform includes virtual try-on technology, size recommendations, personalized shopping, and advanced analytics.",
+                technologies: ["Next.js", "Stripe", "AI/ML", "Cloudinary", "Redis", "AWS"],
+                results: [
+                    "200% increase in conversion rate",
+                    "85% accuracy in size recommendations",
+                    "4.9/5 customer satisfaction",
+                    "300% increase in average order value"
+                ],
+                timeline: "16 weeks",
+                team: "6 developers"
+            },
+            salespro: {
+                title: "SalesPro CRM",
+                category: "Customer Relationship Management",
+                description: "A custom CRM system that streamlined sales processes and improved customer relationship management.",
+                challenge: "Sales teams needed a comprehensive CRM system to manage leads, track sales pipeline, and improve customer communication.",
+                solution: "We developed a custom CRM system using React frontend and Python backend. The system includes lead management, sales pipeline tracking, customer communication tools, and analytics dashboard.",
+                technologies: ["React", "Python", "PostgreSQL", "Redis", "AWS", "Email API"],
+                results: [
+                    "300% improvement in sales efficiency",
+                    "50% reduction in lead response time",
+                    "95% user adoption rate",
+                    "200% increase in sales conversion"
+                ],
+                timeline: "12 weeks",
+                team: "5 developers"
+            }
+        };
+
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            const modal = document.getElementById('projectModal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+
+            title.textContent = project.title;
+            body.innerHTML = `
+                <div class="project-details">
+                    <div class="project-header" style="margin-bottom: var(--spacing-lg);">
+                        <h4 style="color: var(--primary-blue); margin-bottom: var(--spacing-sm);">${project.category}</h4>
+                        <p style="font-size: var(--font-size-lg); margin-bottom: var(--spacing-md);">${project.description}</p>
+                    </div>
+
+                    <div class="project-section" style="margin-bottom: var(--spacing-lg);">
+                        <h4>Challenge</h4>
+                        <p>${project.challenge}</p>
+                    </div>
+
+                    <div class="project-section" style="margin-bottom: var(--spacing-lg);">
+                        <h4>Solution</h4>
+                        <p>${project.solution}</p>
+                    </div>
+
+                    <div class="project-section" style="margin-bottom: var(--spacing-lg);">
+                        <h4>Technologies Used</h4>
+                        <div class="tech-tags" style="display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                            ${project.technologies.map(tech => `<span class="tag">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+
+                    <div class="project-section" style="margin-bottom: var(--spacing-lg);">
+                        <h4>Results</h4>
+                        <ul style="margin-left: var(--spacing-lg);">
+                            ${project.results.map(result => `<li style="margin-bottom: var(--spacing-sm);">${result}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="project-meta" style="display: flex; gap: var(--spacing-xl); margin-top: var(--spacing-lg); padding-top: var(--spacing-lg); border-top: 1px solid #e9ecef;">
+                        <div>
+                            <strong>Timeline:</strong> ${project.timeline}
+                        </div>
+                        <div>
+                            <strong>Team Size:</strong> ${project.team}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.add('active');
+        }
+
+        function closeProjectModal() {
+            document.getElementById('projectModal').classList.remove('active');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeProjectModal();
+            }
+        });
+    </script>
+</body>
+</html>

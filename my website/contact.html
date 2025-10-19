@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Shubham Enterprises for professional software development services. Get free consultation and project quotes.">
+    <meta name="keywords" content="contact software development, web development contact, app development consultation, SaaS development quote">
+    <meta name="author" content="Shubham Enterprises">
+    <title>Contact Us - Get Free Quote | Shubham Enterprises</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">SE</div>
+                    <span class="logo-text">Shubham Enterprises</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </nav>
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Get In Touch</h1>
+                <p class="hero-subtitle" style="color: white;">Ready to start your project? Let's discuss your requirements and create something amazing together.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-6">
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                        
+                        <form class="contact-form" id="contactForm" action="https://formsubmit.co/shubhameditz41@gmail.com" method="POST">
+                            <!-- Hidden fields for FormSubmit -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - Shubham Enterprises">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In *</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="">Select a service</option>
+                                    <option value="web-development">Web Development</option>
+                                    <option value="app-development">Mobile App Development</option>
+                                    <option value="saas-solutions">SaaS Solutions</option>
+                                    <option value="custom-software">Custom Software</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="serviceError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget" class="form-control">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-50k">Under ₹50,000</option>
+                                    <option value="50k-1lakh">₹50,000 - ₹1,00,000</option>
+                                    <option value="1lakh-2lakh">₹1,00,000 - ₹2,00,000</option>
+                                    <option value="2lakh-5lakh">₹2,00,000 - ₹5,00,000</option>
+                                    <option value="above-5lakh">Above ₹5,00,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project requirements, timeline, and any specific features you need..." required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading" style="display: none;">Sending...</span>
+                                </button>
+                                
+                                <button type="button" class="btn btn-secondary btn-lg" id="whatsappBtn" style="margin-left: var(--spacing-md);">
+                                    📱 WhatsApp
+                                </button>
+                            </div>
+                            
+                            <div class="form-success" id="formSuccess" style="display: none;">
+                                <p>✅ Thank you! Your message has been sent successfully. We'll get back to you soon!</p>
+                            </div>
+                            
+                            <div class="form-error" id="formError" style="display: none;">
+                                <p>❌ Sorry, there was an error sending your message. Please try again or contact us directly.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="col-6">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>We're here to help you bring your ideas to life. Reach out to us through any of the channels below.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <h3>Email Us</h3>
+                                    <p>shubhameditz41@gmail.com</p>
+                                    <small>We respond within 24 hours</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h3>Call Us</h3>
+                                    <p>+91 9685315564</p>
+                                    <small>Mon-Fri, 9 AM - 6 PM IST</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h3>Visit Us</h3>
+                                    <p>Mumbai, India</p>
+                                    <small>Remote consultations available</small>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">💬</div>
+                                <div class="contact-details">
+                                    <h3>WhatsApp</h3>
+                                    <p>+91 9685315564</p>
+                                    <small>Quick responses available</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="response-time">
+                            <h3>Response Time</h3>
+                            <div class="response-item">
+                                <span class="response-type">Email</span>
+                                <span class="response-time-value">Within 24 hours</span>
+                            </div>
+                            <div class="response-item">
+                                <span class="response-type">Phone</span>
+                                <span class="response-time-value">Immediate</span>
+                            </div>
+                            <div class="response-item">
+                                <span class="response-type">WhatsApp</span>
+                                <span class="response-time-value">Within 2 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="business-hours">
+                            <h3>Business Hours</h3>
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">9:00 AM - 6:00 PM IST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">10:00 AM - 4:00 PM IST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <div class="text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about our services and process</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>How long does it take to get a project quote?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We typically provide detailed project quotes within 24-48 hours of receiving your requirements. For complex projects, we may schedule a consultation call to better understand your needs.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer free consultations?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes! We offer free initial consultations to discuss your project requirements, provide technical advice, and help you understand the development process.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What information should I include in my project inquiry?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Please include: project description, target audience, key features needed, preferred technologies (if any), timeline expectations, and budget range. The more details you provide, the more accurate our quote will be.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you work with international clients?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Absolutely! We work with clients worldwide. We're experienced in remote collaboration and can accommodate different time zones for meetings and communication.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What happens after I submit the contact form?</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>After submitting the form, you'll receive an email confirmation. Our team will review your requirements and contact you within 24 hours to discuss your project in detail and provide a customized quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: var(--gradient-primary); color: var(--white);">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: var(--white);">Ready to Start Your Project?</h2>
+                <p style="color: var(--white); margin-bottom: var(--spacing-xl);">Let's discuss your ideas and create something amazing together</p>
+                <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                    <a href="#contactForm" class="btn btn-outline btn-lg">Get Free Quote</a>
+                    <a href="portfolio.html" class="btn btn-outline btn-lg">View Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shubham Enterprises</h3>
+                    <p>Transforming businesses through innovative software solutions. We specialize in web development, mobile apps, and SaaS platforms.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="services.html#web-development">Web Development</a>
+                    <a href="services.html#app-development">App Development</a>
+                    <a href="services.html#saas-solutions">SaaS Solutions</a>
+                    <a href="services.html#custom-software">Custom Software</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 shubhameditz41@gmail.com</p>
+                    <p>📞 +91 9685315564</p>
+                    <p>📍 Mumbai, India</p>
+                    <div style="margin-top: var(--spacing-lg);">
+                        <h4>Newsletter Signup</h4>
+                        <form class="newsletter-form" style="display: flex; gap: var(--spacing-sm); margin-top: var(--spacing-sm);">
+                            <input type="email" placeholder="Your email" class="form-control" style="flex: 1; margin-bottom: 0;">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Shubham Enterprises. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/animations.js"></script>
+    
+    <!-- Contact Form Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Form validation
+            function validateForm() {
+                let isValid = true;
+                
+                // Clear previous errors
+                document.querySelectorAll('.error-message').forEach(error => {
+                    error.textContent = '';
+                });
+                
+                // Validate name
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    document.getElementById('nameError').textContent = 'Name is required';
+                    isValid = false;
+                }
+                
+                // Validate email
+                const email = document.getElementById('email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email) {
+                    document.getElementById('emailError').textContent = 'Email is required';
+                    isValid = false;
+                } else if (!emailRegex.test(email)) {
+                    document.getElementById('emailError').textContent = 'Please enter a valid email';
+                    isValid = false;
+                }
+                
+                // Validate service
+                const service = document.getElementById('service').value;
+                if (!service) {
+                    document.getElementById('serviceError').textContent = 'Please select a service';
+                    isValid = false;
+                }
+                
+                // Validate message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    document.getElementById('messageError').textContent = 'Project details are required';
+                    isValid = false;
+                } else if (message.length < 10) {
+                    document.getElementById('messageError').textContent = 'Please provide more details about your project';
+                    isValid = false;
+                }
+                
+                return isValid;
+            }
+            
+            // Form submission
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (!validateForm()) {
+                    return;
+                }
+                
+                // Show loading state
+                submitBtn.querySelector('.btn-text').style.display = 'none';
+                submitBtn.querySelector('.btn-loading').style.display = 'inline';
+                submitBtn.disabled = true;
+                
+                // Submit form
+                const formData = new FormData(contactForm);
+                
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('formSuccess').style.display = 'block';
+                        contactForm.reset();
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('formError').style.display = 'block';
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitBtn.querySelector('.btn-text').style.display = 'inline';
+                    submitBtn.querySelector('.btn-loading').style.display = 'none';
+                    submitBtn.disabled = false;
+                });
+            });
+            
+            // WhatsApp button
+            whatsappBtn.addEventListener('click', function() {
+                const formData = new FormData(contactForm);
+                const name = formData.get('name') || '';
+                const email = formData.get('email') || '';
+                const phone = formData.get('phone') || '';
+                const service = formData.get('service') || '';
+                const budget = formData.get('budget') || '';
+                const message = formData.get('message') || '';
+                
+                const whatsappMessage = `Hi! I'm interested in your services.
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+Budget: ${budget}
+
+Project Details:
+${message}
+
+Please contact me to discuss further.`;
+
+                const encodedMessage = encodeURIComponent(whatsappMessage);
+                const whatsappUrl = `https://wa.me/919685315564?text=${encodedMessage}`;
+                
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
